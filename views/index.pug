@@ -1,0 +1,47 @@
+extends layout
+
+block content
+ .container.mx-auto.px-4
+      form.bg-white.shadow-md.rounded.px-8.pt-6.pb-8.mb-4.max-w-md.mx-auto
+        .mt-2
+          ul.list-reset.flex.border-b
+            li.-mb-px.mr-1
+              button#defaultOpen.tablinks.active.border-l.border-t.border-r.rounded-t.bg-indigo-lightest.inline-block.py-2.px-4.text-grey-dark.font-semibold(class='hover:text-blue-darker', href='#', type='button', onclick="openCity(event , 'fibo')") Even Fibbonaci Numbers
+            li.-mb-px.mr-1
+              button.tablinks.inline-block.py-2.px-4.text-grey-dark.font-semibold(class='hover:text-blue-darker', href='#', type='button', onclick="openCity(event , 'prime')") Largest Prime Factor
+        #fibo.tabcontent.bg-indigo-lightest
+          .w-full
+            .text-center
+              label.block.text-grey-darker.text-xl.font-bold.mb-2.mt-4
+                | Deret Fibonacci Genap
+            .mb-3
+              label.block.text-grey-darker.text-sm.font-bold.mb-2
+                | Number
+              input#num1.shadow.appearance-none.border.rounded.w-full.py-2.px-3.text-grey-darker(value='', type='num', placeholder='Input some number')
+            .mb-3
+              button.bg-blue.text-white.font-bold.py-2.px-4.rounded.mb-3(class='hover:bg-blue-dark', type='button', onclick='fibo()')
+                | Calculate
+              label.block.text-grey.text-xs.italic.mb-2
+                | Please input a number and press "Calculate" button to get the answer
+            div
+              textarea#result1.shadow.appearance-none.border.rounded.w-full.py-2.px-3.text-grey-darker(rows='4', cols='50', value='', placeholder='Answer is....')
+            p.text-center.text-grey.text-xs
+              | ©2018 Azma Eva.
+        #prime.tabcontent.bg-indigo-lightest
+          .w-full.max-w-md.content-center
+            .text-center
+              label.block.text-grey-darker.text-xl.font-bold.mb-2.mt-4
+                | Factor Bilangan Prima terbesar
+            .mb-3
+              label.block.text-grey-darker.text-sm.font-bold.mb-2
+                | Number
+              input#num2.shadow.appearance-none.border.rounded.w-full.py-2.px-3.text-grey-darker(value='', type='num', placeholder='Input some number')
+            .mb-3
+              button.bg-blue.text-white.font-bold.py-2.px-4.rounded.mb-3(class='hover:bg-blue-dark', type='button', onclick='largestprime()')
+                | Calculate
+              label.block.text-grey.text-xs.italic.mb-2
+                | Please input a number and press "Calculate" button to get the answer
+            div
+              textarea#result2.shadow.appearance-none.border.rounded.w-full.py-2.px-3.text-grey-darker(rows='4', cols='50', value='', placeholder='Answer is....')
+            p.text-center.text-grey.text-xs
+              | ©2018 Azma Eva.
