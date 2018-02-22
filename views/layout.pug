@@ -8,7 +8,7 @@ html
     script(type='text/javascript', src='/javascripts/largestprime.js')
     script(type='text/javascript', src='/javascripts/fibo.js')
     script.
-      function openCity(evt, cityName) {
+      function openTab(evt, choice) {
       // Declare all variables
       var i, tabcontent, tablinks;
       // Get all elements with class="tabcontent" and hide them
@@ -22,7 +22,7 @@ html
       tablinks[i].className = tablinks[i].className.replace(" active border-l border-t border-r rounded-t bg-indigo-lightest", "");
       }
       // Show the current tab, and add an "active" class to the button that opened the tab
-      document.getElementById(cityName).style.display = "block";
+      document.getElementById(choice).style.display = "block";
       evt.currentTarget.className += " active border-l border-t border-r rounded-t bg-indigo-lightest";
       }
 
