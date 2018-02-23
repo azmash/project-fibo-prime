@@ -1,0 +1,31 @@
+doctype html
+html
+  head
+    title Project Colabboration
+    link(href='https://cdn.jsdelivr.net/npm/tailwindcss/dist/tailwind.min.css', rel='stylesheet')
+    link(rel='stylesheet', type='text/css', href='/stylesheets/style.css')
+    script(defer='', src='https://use.fontawesome.com/releases/v5.0.6/js/all.js')
+    script(type='text/javascript', src='/javascripts/largestprime.js')
+    script(type='text/javascript', src='/javascripts/fibo.js')
+    script.
+      function openTab(evt, choice) {
+      // Declare all variables
+      var i, tabcontent, tablinks;
+      // Get all elements with class="tabcontent" and hide them
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+      }
+      // Get all elements with class="tablinks" and remove the class "active"
+      tablinks = document.getElementsByClassName("tablinks ");
+      for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active border-l border-t border-r rounded-t bg-indigo-lightest", "");
+      }
+      // Show the current tab, and add an "active" class to the button that opened the tab
+      document.getElementById(choice).style.display = "block";
+      evt.currentTarget.className += " active border-l border-t border-r rounded-t bg-indigo-lightest";
+      }
+
+  body
+    block content
+    
