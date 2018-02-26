@@ -46,7 +46,8 @@ To run the the project simply type
 npm start
 ```
 And access this code from browser
-``` http://localhost:3000/ 
+``` 
+http://localhost:3000/ 
 ```
 
 The project are built using Tailwind CSS, and it contains 2 problem that is A Fibonacci Even and Largest Prime Number.
