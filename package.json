@@ -12,10 +12,23 @@
     "debug": "~2.6.9",
     "express": "~4.15.5",
     "morgan": "~1.9.0",
+    "node": "^9.5.0",
     "pug": "2.0.0-beta11",
     "serve-favicon": "~2.4.5"
   },
   "devDependencies": {
     "nodemon": "^1.15.1"
-  }
+  },
+  "description": "This project is build with Express.js using Pug. Express is a minimal and flexible Node.js web application framework that provides a robust set of features for web and mobile applications. Pug is a high-performance template engine heavily influenced by Haml and implemented with JavaScript for Node.js and browsers, formerly known as \"Jade\".",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/azmash/project-fibo-prime.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/azmash/project-fibo-prime/issues"
+  },
+  "homepage": "https://github.com/azmash/project-fibo-prime#readme"
 }
